@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Soham Enterprises</title>
+<link rel="icon" type="image/png" href="{% static 'logo1.jpg' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=" Soham Enterprises"/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static 'css/font-awesome.css' %}" type="text/css" rel="stylesheet" media="all">   <!-- font-awesome icons --> 
+<link href="{% static 'css/flexslider.css' %}" type="text/css" rel="stylesheet" media="screen" /> 
+<link href="{% static 'css/percircle.css' %}" type="text/css" rel="stylesheet"/> 
+<link href="{% static 'css/lightbox.css' %}" type="text/css" rel="stylesheet"/> <!-- lightbox css -->
+<!-- //Custom Theme files -->  
+<!-- web-fonts -->    
+<link href="{% static '//fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' %}" rel='stylesheet' type='text/css'>
+<link href="{% static '//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' %}" rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+</head>
+<body> 
+	<!-- header -->
+	<div class="headerw3-agile"> 
+		<div class="header-w3mdl"><!-- header-two --> 
+			<div class="container"> 
+				<div class="agileits-logo navbar-left">
+					<a href="{% url 'index' %}">
+					<img src="{% static 'images/logo1.jpg' %}"/>
+					<h1>Soham Enterprises</a></h1> 
+				</div> 
+				<div class="agileits-hdright nav navbar-nav navbar-right">
+					<div class="social-icon">
+						<a href="https://www.twitter.com" target="_blank" class="si-agileits twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/Soham-Enterprises-375598929867606/" target="_blank" class="si-agileits facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="https://www.google.com" target="_blank" class="si-agileits google"><i class="fa fa-google-plus"></i></a> 
+						<a href="https://www.linkedin.com" target="_blank" class="si-agileits linkedin"><i class="fa fa-linkedin"></i></a>
+					</div> 
+				</div>
+				<div class="clearfix"> </div> 
+			</div>	
+		</div>	
+	</div>	
+	<!-- //header -->  
+	<!-- banner -->
+	<div class="w3ls-banner">
+		<div class="header-nav"><!-- header-three --> 	
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						Menu 
+					</button> 
+				</div>
+				<!-- top-nav -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="{% url 'index' %}" class="active">Home</a></li>
+						<li><a href="#services" class="scroll">Services</a></li>   
+						<li><a href="#about" class="scroll">About</a></li>    
+						<li><a href="#gallery" class="scroll">Gallery</a></li>
+						<li><a href="#contact" class="scroll">Contact Us</a></li>
+					</ul>  
+					<div class="clearfix"> </div>	
+				</div>
+			</nav>    
+		</div>
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<p>Welcome</p>
+						<span>
+							<img src="{% static 'images/banner/b1.jpg' %}"/>
+							<i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i> 
+						</span> 
+					<h4>We have the sky as a boundry</h4>
+					</li>
+				
+					<li>
+						<p>Perception</p>
+						<span><img src="{% static 'images/banner/b3.jpg' %}"/><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i></span>
+						<h4>Perception for being Successfull in our field</h4>
+					</li>
+
+					<li>
+						<p>Technology</p>
+						<span><img src="{% static 'images/banner/b4.jpg' %}"/><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i></span>
+						<h4>Technology to aquire the higher achievements</h4>
+					</li>
+					<li>
+						<p>Accuracy</p>
+						<span><img src="{% static 'images/banner/b5.jpg' %}"/><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i></span>
+						<h4>Accuracy to fulfill the expectations</h4>
+					</li>
+					<li>
+						<p>Quality</p>
+						<span><img src="{% static 'images/banner/b6.jpg' %}"/><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i><i class="fa fa-square-o" aria-hidden="true"></i></span>
+						<h4>Quality to make the things great</h4>
+					</li>
+
+				</ul>
+			</div>    
+		</div> 
+		<!-- //banner-text -->  
+	</div>	
+	<!-- //banner -->
+	<!-- services -->
+	<div id="services" class="services">
+		<div class="container">
+			<h3 class="w3title">Services</h3> 
+			<div class="services-w3lsrow">
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grids"> 
+				<a href="{% url 'heavy' %}">
+					<i class="fa fa-industry" aria-hidden="true"></i>
+					<h4>Heavy Engineering</h4>
+					<p>Thats the need of today's industrial market</p>
+			    </a>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+					<div class="w3agile-servs-img">
+						<a href="{% url 'structural' %}">
+							<i class="fa fa-connectdevelop" aria-hidden="true"></i>
+							<h4>Structural Fabrication </h4>
+							<p>Any device mades with the support of the framework which we power it</p>
+					    </a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+					<div class="w3agile-servs-img">
+						<a href="{% url 'brass' %}">
+						<i class="fa fa-codepen" aria-hidden="true"></i>
+						<h4>Brass Welding</h4>
+						<p>It is one of the adequate process in the market</p>
+						</a>
+					</div>
+				</div> 	
+				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
+					<div class="w3agile-servs-img">
+						<a href="{% url 'weldings' %}">
+						<i class="fa fa-bolt" aria-hidden="true"></i>
+						<h4>Other Weldings</h4>
+						<p>And we power the other welding operations</p>
+					</a>
+					</div>
+				</div> 
+				<div class="clearfix"> </div>
+			</div>	 
+		</div>
+	</div>	
+	<!-- //services -->	
+	<!-- about -->
+	<div id="about" class="about"> 
+		<div class="container"> 
+			<div class="about-agileinfo"> 
+				<div class="col-sm-3 about-grids about-grids2">
+					<img src="{% static 'images/img3.jpg' %}" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-sm-6 about-text">
+					<h5>Soham Enterprises </h5>
+					<h4>Solutions to the world of Metal  </h4>
+					<p><b>'Soham Enterprises'</b> was founded and the growing very swiftly under the leadership of the visionary man    <b>Ashok Kirdat</b>.<br>
+					This company established in the 2018 with the vision of the leadership in the field of the Quality in the industry.<br>
+					We want to reach at the zenith of the customers satisfaction with Technolgy,Hard Work and Quality..<br>
+					And we are very happy to say here, that we are growing very consistently in the field of Metal Fabrication.  </p>
+				</div>
+				<div class="col-sm-3 about-grids about-grids2">
+					<img src="{% static 'images/img2.jpg' %}" class="img-responsive" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>	 			
+		</div>	 			
+	</div>			
+	<!-- //about -->  
+	<!-- gallery -->
+	<div id="gallery" class="gallery">  
+		<div class="col-sm-6 col-xs-12 gallery-wthreegrids"> 
+			<div class="gallery-grid-row"> 
+				<div class="col-sm-6 col-xs-6 gallery-grid">   
+					<a href="{% static 'images/g1.jpg' %}" class="agilefig gallery-img" data-lightbox="example-set" data-title="Duis venenatis nisl id posuere dictum. Maecenas vitae accumsan est, id imperdiet libero. Quisque sit amet felis a nisl condimentum bibendum phasellus vitae egestas diam."> </a>
+				</div>
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-text">
+					<h4>Our Gallery</h4> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt ellus feugiat porttitor nulla magna vitae nisl </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grid-row"> 
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-grid3">  
+					<a href="{% static 'images/g3.jpg' %}" class="agilefig gallery-img3" data-lightbox="example-set" data-title="Maecenas vitae accumsan est, id imperdiet libero. Duis venenatis nisl id posuere dictum.  Quisque sit amet felis a nisl condimentum bibendum phasellus vitae egestas diam."> </a>
+				</div>
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-text3">
+					<h4>Our Gallery</h4>  
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt ellus feugiat porttitor nulla magna vitae nisl </p>
+				</div>
+				<div class="clearfix"> </div> 
+			</div> 
+		</div> 
+		<div class="col-sm-6 col-xs-12 gallery-wthreegrids"> 
+			<div class="gallery-grid-row"> 
+				<div class="col-sm-6 col-xs-6 gallery-grid">  
+					<a href="{% static 'images/g2.jpg' %}" class="agilefig gallery-img2" data-lightbox="example-set" data-title="Duis venenatis nisl id posuere dictum.  Maecenas vitae accumsan est, id imperdiet libero. Quisque sit amet felis a nisl condimentum bibendum phasellus vitae egestas diam."> </a>
+				</div> 
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-text">
+					<h4>Our Gallery</h4> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt ellus feugiat porttitor nulla magna vitae nisl </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grid-row">   
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-grid3">  
+					<a href="{% static 'images/g4.jpg' %}" class="agilefig gallery-img4" data-lightbox="example-set" data-title="Nisl id posuere dictum duis venenatis. Maecenas vitae accumsan est, id imperdiet libero. Quisque sit amet felis a nisl condimentum bibendum phasellus vitae egestas diam."> </a>
+				</div>
+				<div class="col-sm-6 col-xs-6 gallery-grid gallery-text3">
+					<h4>Our Gallery</h4> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit tincidunt ellus feugiat porttitor nulla magna vitae nisl </p>
+				</div>
+				<div class="clearfix"> </div> 
+			</div> 
+		</div> 
+		<div class="clearfix"> </div>   
+		<script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script> 
+	</div>
+	<!-- //gallery --> 
+	
+	<!-- contact -->
+	<div id="contact" class="map"> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.3110112762133!2d75.24354405976345!3d19.829624269100677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9bde72601f6d%3A0x1f7cd8c055aa331!2sBadve+Engineering+Ltd.!5e0!3m2!1sen!2sin!4v1546357137976" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="contact">  
+			<div class="container">
+				<h3 class="w3title">Contact Us</h3>
+				<div class="contact-grids">  
+					<div class="col-sm-6 w3ls-address"> 
+						<h4>Get in touch with us</h4>
+						<p class="cnt-p">We provide the solutions to the metal welding processes...</p>
+						<p class="address">MNS chowk road, D-39, Waluj MIDC <br>Aurangabad, Maharashtra, India </p>
+						<p><b>Telephone</b> : +91 985 000 1194</p>
+						<p><b>Mobile No.</b> : +91 982 262 9296</p>
+						<p><b>Email</b> : <a href="mailto:ashok.kirdat09@gmail.com">ashok.kirdat09@gmail.com</a></p>
+						<div class="social-icon contact-w3lsicns">
+						<a href="https://www.twitter.com" target="_blank" class="si-agileits twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com" target="_blank" class="si-agileits facebook"><i class="fa fa-facebook"></i></a> 
+						<a href="https://www.google.com" target="_blank" class="si-agileits google"><i class="fa fa-google-plus"></i></a> 
+						<a href="https://www.linkedin.com" target="_blank" class="si-agileits linkedin"><i class="fa fa-linkedin"></i></a>
+						</div> 
+					</div> 
+					<div> 
+						<a href="{% url 'enquiry' %}">
+						<h4>Please click here to make enquiry about us...</h4>
+						</a>
+					</div>
+					<div class="clearfix"> </div>	
+				</div> 
+			</div> 
+		</div>
+		<!-- //map -->   
+	</div>
+	<!-- //contact --> 
+	<!-- copy rights start here -->
+	<div class="copy-w3right">
+		<div class="container">  
+			<p>© 2019 Soham Enterprises. All Rights Reserved | Design by  <a>Rani Erande.</a> </p>
+		</div>
+	</div>
+	<!-- //copy right end here -->   
+	<!-- js --> 
+	<script src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<!-- FlexSlider --> 
+	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- End-slider-script -->
+	<script src="{% static 'js/SmoothScroll.min.js' %}"></script> 
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<script type="text/javascript" src="{% static 'js/percircle.js' %}"></script> 	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
