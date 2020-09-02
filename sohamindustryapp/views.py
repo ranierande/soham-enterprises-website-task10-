@@ -2,7 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.conf import settings
-from .models import companyform2
 def index(request):
         return render(request,'index.html')
 
@@ -17,12 +16,12 @@ def heavy(request):
 
 def enquiry(request):
     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        f_name = request.POST['name']
-        f_email = request.POST['email']
-        f_comments = request.POST['comments']
+        fname = request.POST['name']
+        femail = request.POST['email']
+        message = request.POST['message']
+
         send_mail('Contact Form',
-		  f_name, 
+		 message, 
 		 settings.EMAIL_HOST_USER,
 		 ['ranierande331@gmail.com'], 
 		 fail_silently=False)

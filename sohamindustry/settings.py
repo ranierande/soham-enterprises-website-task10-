@@ -27,11 +27,10 @@ SECRET_KEY = 'q3(rxqg0byenw98#_-e^a(__hg1od93-p)0)7o2%*(a@b6m9#8'
 DEBUG = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ranierande331@gmail.com'
-EMAIL_HOST_PASSWORD = 'Rambo@9763'
+EMAIL_HOST_PASSWORD = 'RaniErande@8377'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
 ALLOWED_HOSTS = []
 
 

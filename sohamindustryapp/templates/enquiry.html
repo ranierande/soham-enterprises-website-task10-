@@ -75,15 +75,41 @@
 </div>
 	<section class="page-section" id="contact">
         <div class="container">
-			<form action="{% url 'enquiry' %}" method="POST>
-			 {% csrf_token %}
-                Name:<input class="form-control" method="POST" id="name" name="name" placeholder="Name" type="text" required><br>
-                              
-                Email:<input class="form-control" method="POST" id="email" name="email" placeholder="Email" type="email" required><br>
-                            
-                Comments:<textarea class="form-control" method="POST" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                           <input class="btn btn-default pull-right" type="submit"></input>
-             </form>              
+			<form  role="form" method="post" action="{% url 'enquiry' %}">
+	{% csrf_token %}
+
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+				</div>
+				<div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+			<div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="message">
+                        Message:</label>
+                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-lg btn-default pull-right" >submit </button>
+                </div>
+            </div>
+
+        </form>
+
+        </div>
+    </div>
+</form>
         </div>
      </section>
 
